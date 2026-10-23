@@ -1,0 +1,28 @@
+{
+  "functions": [
+    {
+      "source": "backend",
+      "codebase": "skillbridge-api",
+      "runtime": "nodejs22",
+      "ignore": [
+        "node_modules",
+        ".git",
+        ".env",
+        ".env.*",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "emulators": {
+    "firestore": {
+      "port": 8080
+    },
+    "functions": {
+      "port": 5001
+    }
+  }
+}
